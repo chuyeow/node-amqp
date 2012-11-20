@@ -40,9 +40,9 @@ connection.on('ready', function () {
 `connection.connect()` to connect to a server.
 
 `amqp.createConnection()` returns an instance of `amqp.Connection`, which is
-a subclass of `net.Stream`. All the event and methods which work on
-`net.Stream` can also be used on an `amqp.Connection` instance. (e.g., the
-events `'connected'` and `'closed'`.)
+a subclass of `net.Socket` (previously named `net.Stream`). All the event and methods which work on
+`net.Socket` can also be used on an `amqp.Connection` instance. (e.g., the
+events `'connect'` and `'close'` - see http://nodejs.org/api/net.html#net_class_net_socket.)
 
 ### Connection options and URL
 
